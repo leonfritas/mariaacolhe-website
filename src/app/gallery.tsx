@@ -1,5 +1,4 @@
 import React from "react";
-import { Image } from './image';
 
 
 type GalleryItem = {
@@ -20,10 +19,9 @@ export const Gallery: React.FC<GalleryProps> = ({ data }) => {
           <h1 className="text-5xl text-center font-bold leading-tight text-blue-gray-900">
               Galeria
           </h1>
-          <p 
-            className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500 px-10">
-            "Além dos microfones e cadeiras, há mãos que se estendem, 
-            olhos que brilham com aprendizado e silêncios que falam de conquistas."
+          <p className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500 px-10">
+            &quot;Além dos microfones e cadeiras, há mãos que se estendem, 
+            olhos que brilham com aprendizado e silêncios que falam de conquistas.&quot;
           </p>
         </div>
         <div className="row">
