@@ -37,7 +37,7 @@ export const Gallery: React.FC<GalleryProps> = ({ data }) => {
                 </div>
               ))
             ) : (
-              "Loading..."
+              <span>Loading...</span>
             )}
           </div>
         </div>
