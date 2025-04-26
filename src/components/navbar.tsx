@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import {
   Navbar as MTNavbar,
@@ -7,6 +5,7 @@ import {
   IconButton,
   Typography,
 } from "@material-tailwind/react";
+
 import {
   XMarkIcon,
   Bars3Icon,
@@ -92,7 +91,6 @@ const NAV_MENU = [
     icon: EnvelopeIcon,
     href: "#contact",
   },  
-  
 ];
 
 export function Navbar() {
