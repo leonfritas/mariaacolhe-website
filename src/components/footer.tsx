@@ -108,10 +108,10 @@ export function Footer() {
           color="blue-gray"
           className="text-center mt-12 font-normal !text-gray-700"
         >
-          &copy; {CURRENT_YEAR} Desenvolvido por{" "}
+          &copy; {CURRENT_YEAR} 
           <a href="https://www.creative-tim.com" target="_blank" rel="noopener noreferrer">
-            Noodle Software Solutions
-          </a>{"."}
+          Desenvolvido por Noodle Software Solutions.
+          </a>
         </Typography>
 
       </div>
