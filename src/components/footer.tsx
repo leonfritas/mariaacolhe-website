@@ -111,8 +111,8 @@ export function Footer() {
           &copy; {CURRENT_YEAR} Desenvolvido{" "}
           <a href="https://www.material-tailwind.com" target="_blank" rel="noopener noreferrer">
             
-          </a>{" "}
-          por{" "}
+          </a>
+          por
           <a href="https://www.creative-tim.com" target="_blank" rel="noopener noreferrer">
             Noodle Software Solutions
           </a>
