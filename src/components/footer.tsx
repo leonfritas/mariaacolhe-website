@@ -104,15 +104,14 @@ export function Footer() {
           </div>
         </div>
 
-        <Typography
-          color="blue-gray"
+        <h3          
           className="text-center mt-12 font-normal !text-gray-700"
         >
           &copy; {CURRENT_YEAR} 
-          <a href="https://www.creative-tim.com" target="_blank" rel="noopener noreferrer">
+          <a href="#" target="_blank" rel="noopener noreferrer">
           Desenvolvido por Noodle Software Solutions.
           </a>
-        </Typography>
+        </h3>
 
       </div>
     </footer>
