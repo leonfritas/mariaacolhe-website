@@ -21,53 +21,53 @@ export function Footer() {
         <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 max-w-6xl mx-auto rounded-2xl p-5">
           <div className="w-full col-span-3 rounded-lg h-full py-8 p-5 md:p-16 bg-gray-900">
             <div className="mb-2">
-  <h4 className="text-white text-2xl font-semibold mb-2">
-    Contato
-  </h4>
+              <h4 className="text-white text-2xl font-semibold mb-2">
+                Contato
+              </h4>
 
-  <p className="mx-auto mb-8 text-base text-gray-500">
-    Atendimento de segunda a sexta-feira, das 8h às 18h. Não realizamos atendimento aos sábados, domingos e feriados.
-  </p>
+              <p className="mx-auto mb-8 text-base text-gray-500">
+                Atendimento de segunda a sexta-feira, das 8h às 18h. Não realizamos atendimento aos sábados, domingos e feriados.
+              </p>
 
-  <div className="flex gap-5">
-    <PhoneIcon className="h-6 w-6 text-white" />
-    <h6 className="text-white text-lg font-semibold">
-      (81) 9 9999-9999
-    </h6>
-  </div>
+              <div className="flex gap-5">
+                <PhoneIcon className="h-6 w-6 text-white" />
+                <h6 className="text-white text-lg font-semibold">
+                  (81) 9 9999-9999
+                </h6>
+              </div>
 
-  <div className="flex my-2 gap-5">
-    <EnvelopeIcon className="h-6 w-6 text-white" />
-    <h6 className="text-white text-lg font-semibold">
-      mariaacolhe@juizado.com
-    </h6>
-  </div>
-</div>
+              <div className="flex my-2 gap-5">
+                <EnvelopeIcon className="h-6 w-6 text-white" />
+                <h6 className="text-white text-lg font-semibold">
+                  mariaacolhe@juizado.com
+                </h6>
+              </div>
+            </div>
 
-<div className="flex items-center gap-5 mt-6">
-  <button className="text-white">
-    <i className="fa-brands fa-facebook text-lg" />
-  </button>
-  <button className="text-white">
-    <i className="fa-brands fa-instagram text-lg" />
-  </button>
-  <button className="text-white">
-    <i className="fa-brands fa-whatsapp text-lg" />
-  </button>
-</div>
+            <div className="flex items-center gap-5 mt-6">
+              <button className="text-white">
+                <i className="fa-brands fa-facebook text-lg" />
+              </button>
+              <button className="text-white">
+                <i className="fa-brands fa-instagram text-lg" />
+              </button>
+              <button className="text-white">
+                <i className="fa-brands fa-whatsapp text-lg" />
+              </button>
+            </div>
 
-<ul className="flex flex-wrap justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
-  {LINKS.map((link, index) => (
-    <li key={index}>
-      <a
-        href={link.href}
-        className="text-sm font-normal text-gray-700 hover:text-gray-900 transition-colors"
-      >
-        {link.name}
-      </a>
-    </li>
-  ))}
-</ul>
+            <ul className="flex flex-wrap justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
+              {LINKS.map((link, index) => (
+                <li key={index}>
+                  <a
+                    href={link.href}
+                    className="text-sm font-normal text-gray-700 hover:text-gray-900 transition-colors"
+                  >
+                    {link.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>  
 
           <ul className="flex flex-wrap justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">

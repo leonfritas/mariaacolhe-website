@@ -130,8 +130,7 @@ export function Navbar() {
           className={`text-2xl font-bold ${
             isScrolling ? "text-gray-900" : "text-white"
           }`}   
-          color={isScrolling ? "blue-gray" : "white"}
-          className="text-lg font-bold"
+          color={isScrolling ? "blue-gray" : "white"}        
         >
           <a href="#home">Maria Acolhe</a>          
         </h2>
