@@ -109,14 +109,11 @@ export function Footer() {
           className="text-center mt-12 font-normal !text-gray-700"
         >
           &copy; {CURRENT_YEAR} Desenvolvido{" "}
-          <a href="https://www.material-tailwind.com" target="_blank" rel="noopener noreferrer">
-            
-          </a>
-          por
+          por{" "}
           <a href="https://www.creative-tim.com" target="_blank" rel="noopener noreferrer">
             Noodle Software Solutions
           </a>
-          .
+          {"."}
         </Typography>
       </div>
     </footer>
