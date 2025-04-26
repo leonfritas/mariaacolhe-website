@@ -1,0 +1,81 @@
+{
+    "Gallery": [
+    {
+      "title": "Project Title",
+      "largeImage": "image/maria-acolhe/01-large.jpg",
+      "smallImage": "image/maria-acolhe/01-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "image/maria-acolhe/02-large.jpg",
+      "smallImage": "image/maria-acolhe/02-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "image/maria-acolhe/03-large.jpg",
+      "smallImage": "image/maria-acolhe/03-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "image/maria-acolhe/04-large.jpg",
+      "smallImage": "image/maria-acolhe/04-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "image/maria-acolhe/05-large.jpg",
+      "smallImage": "image/maria-acolhe/05-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "image/maria-acolhe/06-large.jpg",
+      "smallImage": "image/maria-acolhe/06-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "image/maria-acolhe/07-large.jpg",
+      "smallImage": "image/maria-acolhe/07-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "image/maria-acolhe/08-large.jpg",
+      "smallImage": "image/maria-acolhe/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "image/maria-acolhe/09-large.jpg",
+      "smallImage": "image/maria-acolhe/09-small.jpg"
+    }
+  ],
+  "Testimonials": [
+    {
+      "img": "image/testimonials/01.jpg",
+      "text": "\"O Maria Acolhe foi meu porto seguro quando não tinha mais esperança. Me ajudaram a conseguir a medida protetiva, ofereceram apoio psicológico e, o mais importante: me mostraram que eu não estava sozinha. Hoje tenho minha vida de volta!",
+      "name": "Ana Lúcia, 42 anos"
+    },
+    {
+      "img": "image/testimonials/02.jpg",
+      "text": "\"Minha irmã sofria calada há anos. Através do projeto, aprendi como denunciar e acolhê-la sem julgamentos. A equipe nos orientou em cada passo, desde a delegacia até o abrigo seguro. Gratidão por existirem!",
+      "name": "Carlos Eduardo, 28 anos"
+    },
+    {
+      "img": "image/testimonials/03.jpg",
+      "text": "\"Trabalhar no Maria Acolhe transformou minha perspectiva sobre o impacto coletivo. Cada sorriso reconquistado, cada mulher que recupera sua autonomia... Isso não tem preço. Somos uma rede de reconstrução de vidas.",
+      "name": "Dra. Mariana Campos, 35 anos"
+    },
+    {
+      "img": "image/testimonials/04.jpg",
+      "text": "\"Depois de 15 anos afastada do mercado por causa do meu agressor, o projeto me capacitou em cursos e me ajudou a conseguir meu primeiro emprego formal. Finalmente me sinto dona do meu futuro!",
+      "name": "Roberta Souza, 50 anos "
+    },
+    {
+      "img": "image/testimonials/04.jpg",
+      "text": "\"Depois de 15 anos afastada do mercado por causa do meu agressor, o projeto me capacitou em cursos e me ajudou a conseguir meu primeiro emprego formal. Finalmente me sinto dona do meu futuro!",
+      "name": "Roberta Souza, 50 anos "
+    },
+    {
+      "img": "image/testimonials/04.jpg",
+      "text": "\"Depois de 15 anos afastada do mercado por causa do meu agressor, o projeto me capacitou em cursos e me ajudou a conseguir meu primeiro emprego formal. Finalmente me sinto dona do meu futuro!",
+      "name": "Roberta Souza, 50 anos "
+    }
+  ]
+}
