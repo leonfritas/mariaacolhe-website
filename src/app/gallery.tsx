@@ -20,8 +20,8 @@ export const Gallery: React.FC<GalleryProps> = ({ data }) => {
               Galeria
           </h1>
           <p className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500 px-10">
-            &quot;Além dos microfones e cadeiras, há mãos que se estendem, 
-            olhos que brilham com aprendizado e silêncios que falam de conquistas.&quot;
+            Além dos microfones e cadeiras, há mãos que se estendem, 
+            olhos que brilham com aprendizado e silêncios que falam de conquistas.
           </p>
         </div>
         <div className="row">
