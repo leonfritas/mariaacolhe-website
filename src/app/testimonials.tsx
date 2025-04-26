@@ -32,7 +32,7 @@ export const Testimonials: React.FC<TestimonialsProps> = (props) => {
                         />
                       </div>
                       <div className="testimonial-content overflow-hidden">
-                        <p className="mb-0 text-sm italic">"{d.text}"</p>
+                        <p className="mb-0 text-sm italic">{d.text}</p>
                         <div className="testimonial-meta mt-2 text-sm font-semibold text-[#666]">
                           - {d.name}
                         </div>
