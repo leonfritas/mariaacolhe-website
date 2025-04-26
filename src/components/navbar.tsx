@@ -3,7 +3,6 @@ import {
   Navbar as MTNavbar,
   Collapse,
   IconButton,
-  Typography,
 } from "@material-tailwind/react";
 
 import {
@@ -45,7 +44,7 @@ function NavItem({ children, href, onClick }: NavItemProps) {
 
   return (
     <li>
-      <Typography
+      <h2
         as="a"
         href={href || "#"}
         onClick={handleClick}
@@ -54,7 +53,7 @@ function NavItem({ children, href, onClick }: NavItemProps) {
         className="flex items-center gap-2 font-medium"
       >
         {children}
-      </Typography>
+      </h2>
     </li>
   );
 }
@@ -127,13 +126,15 @@ export function Navbar() {
       className="fixed top-0 z-50 border-0"
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Typography
-          
+        <h2
+          className={`text-2xl font-bold ${
+            isScrolling ? "text-gray-900" : "text-white"
+          }`}   
           color={isScrolling ? "blue-gray" : "white"}
           className="text-lg font-bold"
         >
           <a href="#home">Maria Acolhe</a>          
-        </Typography>
+        </h2>
         <ul
           className={`ml-10 hidden items-center gap-6 lg:flex ${
             isScrolling ? "text-gray-900" : "text-white"
