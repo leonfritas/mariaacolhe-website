@@ -2,7 +2,6 @@ import React from "react";
 import {
   Navbar as MTNavbar,
   Collapse,
-  IconButton,
 } from "@material-tailwind/react";
 
 import {
@@ -13,7 +12,7 @@ import {
   ChartBarIcon,
   ChatBubbleBottomCenterTextIcon,
   QuestionMarkCircleIcon,
-  EnvelopeIcon,
+  EnvelopeIcon
 } from "@heroicons/react/24/solid";
 
 interface NavItemProps {
@@ -153,19 +152,13 @@ export function Navbar() {
             <Button color={isScrolling ? "gray" : "white"}>blocks</Button>
           </a>
         </div> */}
-        <IconButton
-          size="sm" 
-          variant="text"
-          color={isScrolling ? "gray" : "white"}
-          onClick={handleOpen}
-          className="ml-auto inline-block lg:hidden"
-        >
+        <button className="text-gray-500 hover:text-gray-900">
           {open ? (
             <XMarkIcon strokeWidth={2} className="h-6 w-6" />
           ) : (
             <Bars3Icon strokeWidth={2} className="h-6 w-6" />
           )}
-        </IconButton>
+        </button>
       </div>
       <Collapse open={open}>
         <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">

@@ -1,4 +1,3 @@
-import { IconButton } from "@material-tailwind/react";
 import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
 
 const CURRENT_YEAR = new Date().getFullYear();
@@ -87,15 +86,15 @@ export function Footer() {
           </ul>
 
           <div className="flex w-fit justify-center gap-2">
-            <IconButton size="sm" color="gray" variant="text">
+            <button className="text-gray-500 hover:text-gray-900">
               <i className="fa-brands fa-twitter text-lg" />
-            </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
+            </button>
+            <button className="text-gray-500 hover:text-gray-900">
               <i className="fa-brands fa-youtube text-lg" />
-            </IconButton>
-            <IconButton size="sm" color="gray" variant="text">
+            </button>
+            <button className="text-gray-500 hover:text-gray-900">
               <i className="fa-brands fa-instagram text-lg" />
-            </IconButton>
+            </button>
 
           </div>
         </div>
