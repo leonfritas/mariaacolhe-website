@@ -44,16 +44,15 @@ function NavItem({ children, href, onClick }: NavItemProps) {
 
   return (
     <li>
-      <h2
-        as="a"
+      <a
         href={href || "#"}
         onClick={handleClick}
         target={href?.startsWith("http") ? "_blank" : "_self"}
-        variant="paragraph"
+     
         className="flex items-center gap-2 font-medium"
       >
         {children}
-      </h2>
+      </a>
     </li>
   );
 }
@@ -155,7 +154,7 @@ export function Navbar() {
           </a>
         </div> */}
         <IconButton
-          variant="text"
+        
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"

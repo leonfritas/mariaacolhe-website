@@ -73,15 +73,15 @@ export function Footer() {
           <ul className="flex flex-wrap justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
             {LINKS2.map((link, index) => (
               <li key={index}>
-                <h2
-                  as="a"
+                <a
+                
                   href={link.href}
-                  variant="small"
+                  
                   color="white"
                   className="font-normal !text-gray-700 hover:!text-gray-900 transition-colors"
                 >
                   {link.name}
-                </h2>
+                </a>
               </li>
             ))}
           </ul>
