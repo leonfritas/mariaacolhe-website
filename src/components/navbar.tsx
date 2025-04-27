@@ -119,10 +119,10 @@ export function Navbar() {
 
   return (
     <MTNavbar
-      shadow={false}
-      color={isScrolling ? "white" : "transparent"}
-      className="fixed top-0 z-50 border-0"
+      fullWidth
+      className={`fixed top-0 z-50 border-0 ${isScrolling ? "bg-white" : "bg-transparent"} shadow-none`}
     >
+
       <div className="container mx-auto flex items-center justify-between">
         <h2
           className={`text-2xl font-bold ${
