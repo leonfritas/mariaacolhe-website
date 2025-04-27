@@ -154,7 +154,8 @@ export function Navbar() {
           </a>
         </div> */}
         <IconButton
-        
+          size="sm" 
+          variant="text"
           color={isScrolling ? "gray" : "white"}
           onClick={handleOpen}
           className="ml-auto inline-block lg:hidden"
