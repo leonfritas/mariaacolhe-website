@@ -3,6 +3,7 @@ import {
   Navbar as MTNavbar,
   Collapse,
 } from "@material-tailwind/react";
+import NavItem from "./navitem";
 
 import {
   XMarkIcon,
@@ -15,46 +16,9 @@ import {
   EnvelopeIcon
 } from "@heroicons/react/24/solid";
 
-interface NavItemProps {
-  children: React.ReactNode;
-  href?: string;
-}
 
-interface NavItemProps {
-  children: React.ReactNode;
-  href?: string;
-  onClick?: () => void;
-}
 
-function NavItem({ children, href, onClick }: NavItemProps) {
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (href?.startsWith("#")) {
-      e.preventDefault();
-      const el = document.querySelector(href);
-      if (el) {
-        setTimeout(() => {
-          el.scrollIntoView({ behavior: "smooth", block: "start" });
-        }, 100); 
-      }
-    }
-    onClick?.();
-  };
-  
 
-  return (
-    <li>
-      <a
-        href={href || "#"}
-        onClick={handleClick}
-        target={href?.startsWith("http") ? "_blank" : "_self"}
-     
-        className="flex items-center gap-2 font-medium"
-      >
-        {children}
-      </a>
-    </li>
-  );
-}
 
 
 const NAV_MENU = [
@@ -128,9 +92,12 @@ export function Navbar() {
   
       <div>
         <div className="container mx-auto flex items-center justify-between">
+        <NavItem href="#home">
           <h2 className={`text-2xl font-bold ${isScrolling ? "text-gray-900" : "text-white"}`}>
-            <a href="#home">Maria Acolhe</a>
+            Maria Acolhe
           </h2>
+        </NavItem>
+
 
           <ul className={`ml-10 hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"}`}>
             {NAV_MENU.map(({ name, icon: Icon, href }) => (
@@ -141,13 +108,17 @@ export function Navbar() {
             ))}
           </ul>
 
-          <button onClick={handleOpen} className="text-gray-500 hover:text-gray-900">
+          <button
+            onClick={handleOpen}
+            className="text-gray-500 hover:text-gray-900 lg:hidden"
+          >
             {open ? (
               <XMarkIcon strokeWidth={2} className="h-6 w-6" />
             ) : (
               <Bars3Icon strokeWidth={2} className="h-6 w-6" />
             )}
           </button>
+
         </div>
 
         <Collapse open={open}>

@@ -1,11 +1,14 @@
 import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
+import NavItem from "./navitem";
 
 const CURRENT_YEAR = new Date().getFullYear();
 const LINKS = [
   {name: "Home", href: "#home"}, 
   {name: "Sobre", href: "#about"}, 
   {name: "Galeria", href: "#gallery"}, 
-  {name: "Estatísticas", href: "#stats"},  
+  {name: "Estatísticas", href: "#stats"}, 
+  {name: "Depoimentos", href: "#testimonials"},
+  {name: "Perguntas Frequentes", href: "#faq"} 
 ];
 
 const LINKS2 = [ 
@@ -18,13 +21,13 @@ export function Footer() {
     <footer id="contact" className="pb-5 p-10 md:pt-10">
       <div className="container flex flex-col mx-auto">
         <div className="flex !w-full py-10 mb-5 md:mb-20 flex-col justify-center !items-center bg-gray-900 max-w-6xl mx-auto rounded-2xl p-5">
-          <div className="w-full col-span-3 rounded-lg h-full py-8 p-5 md:p-16 bg-gray-900">
+          <div className="w-full col-span-3 rounded-lg h-full sm:py-8 sm:p-5 lg:py-2 md:p-16 bg-gray-900">
             <div className="mb-2">
-              <h4 className="text-white text-2xl font-semibold mb-2">
+              <h4 className="text-white text-2xl font-semibold mb-2 lg:text-[28px]">
                 Contato
               </h4>
 
-              <p className="mx-auto mb-8 text-base text-gray-500">
+              <p className="mx-auto mb-8 text-base text-gray-500 lg:text-[18px]">
                 Atendimento de segunda a sexta-feira, das 8h às 18h. Não realizamos atendimento aos sábados, domingos e feriados.
               </p>
 
@@ -43,68 +46,36 @@ export function Footer() {
               </div>
             </div>
 
-            <div className="flex items-center gap-5 mt-6">
-              <button className="text-white">
-                <i className="fa-brands fa-facebook text-lg" />
-              </button>
-              <button className="text-white">
-                <i className="fa-brands fa-instagram text-lg" />
-              </button>
-              <button className="text-white">
-                <i className="fa-brands fa-whatsapp text-lg" />
-              </button>
-            </div>
-
-            <ul className="flex flex-wrap justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
-              {LINKS.map((link, index) => (
-                <li key={index}>
-                  <a
-                    href={link.href}
-                    className="text-sm font-normal text-gray-700 hover:text-gray-900 transition-colors"
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>  
-
-          <ul className="flex flex-wrap justify-center my-4 md:my-0 w-max mx-auto items-center gap-4">
-            {LINKS2.map((link, index) => (
-              <li key={index}>
-                <a
-                
-                  href={link.href}
+            <div className="flex flex-wrap lg:flex-col justify-around gap-10"> 
+              <div className="flex items-center justify-center gap-5 mt-6">
+                <button className="text-white">
+                  <i className="fa-brands fa-whatsapp text-5xl" /><p>Entrar em contato via Whatsapp</p>
+                </button>
+              </div>
+              <ul className="flex flex-wrap justify-center mt-4 md:my-0 w-max mx-auto items-center gap-4">
+                {LINKS.map((link, index) => (
                   
-                  color="white"
-                  className="font-normal !text-gray-700 hover:!text-gray-900 transition-colors"
-                >
-                  {link.name}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          <div className="flex w-fit justify-center gap-2">
-            <button className="text-gray-500 hover:text-gray-900">
-              <i className="fa-brands fa-twitter text-lg" />
-            </button>
-            <button className="text-gray-500 hover:text-gray-900">
-              <i className="fa-brands fa-youtube text-lg" />
-            </button>
-            <button className="text-gray-500 hover:text-gray-900">
-              <i className="fa-brands fa-instagram text-lg" />
-            </button>
-
-          </div>
+                    <NavItem  key={index} href={link.href}>
+                      <button
+                        
+                        className="lg:text-2xl font-normal text-gray-700 hover:text-white transition-colors"
+                      >
+                        {link.name}
+                      </button>
+                    </NavItem>
+                  
+                ))}
+              </ul> 
+            </div>
+          </div>  
         </div>
 
         <h3          
           className="text-center mt-12 font-normal !text-gray-700"
         >
-          &copy; {CURRENT_YEAR} 
+          
           <a href="#" target="_blank" rel="noopener noreferrer">
-          Desenvolvido por Noodle Software Solutions.
+          &copy; {CURRENT_YEAR} Desenvolvido por Noodle Software Solutions.
           </a>
         </h3>
 

@@ -27,7 +27,7 @@ export default function Portfolio() {
       <OurStats />
       <Testimonials data={landingPageData.Testimonials} />
       <Faq />
-      <SponsoredBy />
+      {/* <SponsoredBy /> */}
       <Footer />
     </>
   );

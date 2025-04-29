@@ -22,13 +22,13 @@ export function AboutEvent() {
       {
         EVENT_INFO.map((event, index) => (
           <div key={index} className="mb-10">
-            <h6 className="text-center mb-2 text-orange-500 font-bold">
+            <h6 className="text-center mb-2 text-orange-500 font-bold lg:text-2xl">
               {event.subTitle}
             </h6>
-            <h3 className="text-center text-2xl font-bold text-blue-gray-900 mb-6">
+            <h3 className="text-center text-2xl font-bold text-blue-gray-900 mb-6 lg:text-3xl">
               {event.title}
             </h3>
-            <p className="mt-2 max-w-4xl mx-auto w-full text-center text-lg font-normal text-gray-500 mb-8">
+            <p className="mt-2 max-w-4xl mx-auto w-full text-center text-lg font-normal text-gray-500 mb-8 lg:text-2xl">
               {event.description}
             </p>
           </div>

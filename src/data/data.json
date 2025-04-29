@@ -1,51 +1,66 @@
 {
     "Gallery": [
-    {
-      "title": "Project Title",
-      "largeImage": "image/maria-acolhe/01-large.jpg",
-      "smallImage": "image/maria-acolhe/01-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "image/maria-acolhe/02-large.jpg",
-      "smallImage": "image/maria-acolhe/02-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "image/maria-acolhe/03-large.jpg",
-      "smallImage": "image/maria-acolhe/03-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "image/maria-acolhe/04-large.jpg",
-      "smallImage": "image/maria-acolhe/04-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "image/maria-acolhe/05-large.jpg",
-      "smallImage": "image/maria-acolhe/05-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "image/maria-acolhe/06-large.jpg",
-      "smallImage": "image/maria-acolhe/06-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "image/maria-acolhe/07-large.jpg",
-      "smallImage": "image/maria-acolhe/07-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "image/maria-acolhe/08-large.jpg",
-      "smallImage": "image/maria-acolhe/08-small.jpg"
-    },
-    {
-      "title": "Project Title",
-      "largeImage": "image/maria-acolhe/09-large.jpg",
-      "smallImage": "image/maria-acolhe/09-small.jpg"
-    }
-  ],
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-01.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-01.jpeg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-02.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-02.jpeg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-03.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-03.jpeg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-04.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-04.jpeg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-05.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-05.jpeg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-06.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-06.jpeg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-07.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-07.jpeg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-08.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-08.jpeg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-09.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-09.jpeg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-10.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-10.jpeg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-11.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-11.jpeg"
+      },
+      {
+        "title": "Project Title",
+        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-12.jpeg",
+        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-12.jpeg"
+      }
+    ],
   "Testimonials": [
     {
       "img": "image/testimonials/01.jpg",

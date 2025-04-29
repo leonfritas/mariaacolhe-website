@@ -14,10 +14,10 @@ export function StatsCard({ count, title }: StatsCardProps) {
       onPointerEnterCapture={undefined} // Prop obrigatória no v3+
       onPointerLeaveCapture={undefined} // Prop obrigatória no v3+
     >
-      <h2 className="font-bold" color="blue-gray">
+      <h2 className="font-bold text-4xl" color="blue-gray">
         {count}
       </h2>
-      <h2 color="blue-gray" className="mt-1 font-medium">
+      <h2 color="blue-gray" className="mt-1 font-medium lg:text-3xl text-2xl">
         {title}
       </h2>
     </Card>

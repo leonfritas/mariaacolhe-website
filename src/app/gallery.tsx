@@ -14,14 +14,14 @@ type GalleryProps = {
 export const Gallery: React.FC<GalleryProps> = ({ data }) => {
   return (
     <div id="gallery" className="text-center">
-      <div className="flex flex-col items-center justify-center py-[100px] bg-[#f6f6f6]">
+      <div className="flex flex-col items-center justify-center py-[100px] px-3 lg:px-8 bg-[#f6f6f6]">
         <div className="section-title">
           <h1 className="text-5xl text-center font-bold leading-tight text-blue-gray-900">
               Galeria
           </h1>
-          <p className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500 px-10">
-            Além dos microfones e cadeiras, há mãos que se estendem, 
-            olhos que brilham com aprendizado e silêncios que falam de conquistas.
+          <p className="mt-2 lg:max-w-4xl mb-8 w-full text-center font-normal !text-gray-500 px-10 lg:text-2xl">
+            Além dos microfones e cadeiras, há mãos que se estendem, abraços que acolhem e 
+            olhos que brilham com aprendizado.
           </p>
         </div>
         <div className="row">

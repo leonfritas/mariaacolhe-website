@@ -1,5 +1,7 @@
 "use client";
 
+import NavItem from "@/components/navitem";
+
 function Hero() {
   return (
     <div id="home" className="relative min-h-screen w-full bg-cover bg-no-repeat
@@ -15,10 +17,12 @@ function Hero() {
           <p className="text-xl md:text-2xl text-white mt-4 mb-12 w-full md:max-w-full lg:max-w-2xl">
             Venha fazer parte desta rede de amor, cuidado e esperança.
           </p>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4">            
+            <NavItem href="#about" >
             <button className="bg-gradient-to-r from-white to-gray-100 text-gray-900 font-medium py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all">
               CONHEÇA O PROJETO
-            </button>              
+            </button>     
+            </NavItem>         
           </div>
         </div>
       </div>

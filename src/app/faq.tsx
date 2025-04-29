@@ -10,20 +10,21 @@ const FAQS = [
   },
   {
     title: "2. Quem pode participar ou ser atendido pelo Maria Acolhe?",
-    desc: "O projeto é voltado principalmente para mulheres em situação de vulnerabilidade, oferecendo acolhimento e apoio integral. Além disso, também realizamos ações de conscientização e reeducação voltadas para agressores, buscando promover a responsabilização e a mudança de comportamento, com o objetivo de romper ciclos de violência.",
+    desc: "O projeto é voltado principalmente para mulheres em situação de vulnerabilidade, oferecendo acolhimento e apoio integral. Além disso, também realizamos ações de conscientização e reeducação voltadas para os homens, buscando promover a responsabilização e a mudança de comportamento, com o objetivo de romper ciclos de violência.",
   },
   {
     title: "3. Quais tipos de apoio o Maria Acolhe oferece?",
     desc: "Oferecemos acolhimento psicológico, assistência social, oficinas de capacitação profissional, orientação jurídica e encaminhamento para serviços públicos de saúde, segurança e moradia, conforme a necessidade de cada mulher.",
   },
   {
-    title: "4. Como faço para entrar em contato ou buscar ajuda no Maria Acolhe?",
-    desc: "O atendimento pode ser agendado pelo telefone oficial, pelas redes sociais do projeto ou presencialmente nos pontos de apoio parceiros. Temos também um canal de atendimento emergencial para casos de urgência.",
+    title: "4. O que não fazemos?",
+    desc: "O Juizado Especial de Violência Doméstica não trata de casos de guarda de filhos, pensão alimentícia, reconhecimento de paternidade ou divórcios com partilha de bens. Para estas situações, é necessário procurar a Defensoria Pública (serviço gratuito) ou um advogado particular.",
   },
   {
-    title: "5. O projeto Maria Acolhe cobra algum valor pelos serviços prestados?",
-    desc: "Não, todos os serviços oferecidos pelo Maria Acolhe são totalmente gratuitos, viabilizados através de parcerias, doações e apoio de voluntários.",
+    title: "5. Qual o papel do juizado?",
+    desc: "O Juizado concede Medidas Protetivas de Urgência para proteger vítimas, julga casos de violência contra a mulher e resolve processos de divórcio/dissolução de união estável sem partilha de bens, garantindo agilidade e segurança jurídica.",
   },
+
 ];
 
 export function Faq() {
@@ -39,7 +40,7 @@ export function Faq() {
             Perguntas Frequentes
           </h2>
           <p
-            className="mt-2 max-w-4xl mx-auto w-full text-center text-lg font-normal text-gray-500 mb-8"
+            className="mt-2 max-w-4xl mx-auto w-full text-center text-lg font-normal text-gray-500 mb-8 lg:text-2xl"
           >
            Bem-vindo à seção de Perguntas Frequentes do Maria Acolhe.
            Estamos aqui para responder às dúvidas mais comuns e oferecer as informações que você precisa.
@@ -57,14 +58,14 @@ export function Faq() {
               onPointerEnterCapture={() => {}}
               onPointerLeaveCapture={() => {}}
             >
-              <AccordionHeader className="text-left text-gray-900"
+              <AccordionHeader className="text-left text-gray-900 lg:text-2xl"
                             placeholder=""
                             onPointerEnterCapture={() => {}}
                             onPointerLeaveCapture={() => {}}>
                 {title}
               </AccordionHeader>
               <AccordionBody>
-                <p className="mt-2 max-w-4xl mx-auto w-full text-center text-lg font-normal text-gray-500 mb-8">
+                <p className="mt-2 max-w-4xl mx-auto w-full text-center text-lg font-normal text-gray-500 mb-8 lg:text-[22px]">
                   {desc}
                 </p>
               </AccordionBody>
