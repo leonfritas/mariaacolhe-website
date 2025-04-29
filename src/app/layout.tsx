@@ -26,7 +26,7 @@ export default function RootLayout({
         <script
           defer
           data-site="mariaacolhe.com"
-          src="https://www.mariaacolhe.com"
+          // src="https://www.mariaacolhe.com"
         ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
