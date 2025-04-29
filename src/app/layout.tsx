@@ -10,9 +10,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "NextJS Tailwind Event Landing Page",
+  title: "Maria Acolhe",
   description:
-    "Introducing Tailwind Event Landing Page, a dynamic and visually appealing landing page template designed using Tailwind CSS and Material Tailwind.",
+    "Projeto dedicado ao acolhimento e suporte humanizado, promovendo cuidado e dignidade.",
 };
 
 export default function RootLayout({
@@ -25,8 +25,8 @@ export default function RootLayout({
       <head>
         <script
           defer
-          data-site="YOUR_DOMAIN_HERE"
-          // src="https://api.nepcha.com/js/nepcha-analytics.js"
+          data-site="mariaacolhe.com"
+          src="https://www.mariaacolhe.com"
         ></script>
         <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </head>
