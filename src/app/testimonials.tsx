@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 interface Testimonial {
   name: string;
@@ -25,9 +26,11 @@ export const Testimonials: React.FC<TestimonialsProps> = (props) => {
                   <div key={`${d.name}-${i}`} className="w-full md:w-1/3 px-4 mb-8">
                     <div className="testimonial bg-white p-5 rounded-lg shadow-sm relative">
                       <div className="testimonial-image float-left mr-4">
-                        <img 
+                        <Image 
                           src={d.img} 
                           alt={d.name} 
+                          width={100}
+                          height={100}
                           className="block w-16 h-16 rounded-full object-cover"
                         />
                       </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 
 type GalleryItem = {
@@ -29,9 +30,11 @@ export const Gallery: React.FC<GalleryProps> = ({ data }) => {
             {data ? (
               data.map((d, i) => (
                 <div key={`${d.title}-${i}`} className="w-full overflow-hidden rounded-lg shadow-md">
-                  <img 
+                  <Image
                     src={d.smallImage} 
                     alt={d.title} 
+                    width={500}
+                    height={500}
                     className="w-full h-64 object-cover"
                   />
                 </div>

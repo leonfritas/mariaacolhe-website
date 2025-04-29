@@ -2,93 +2,93 @@
     "Gallery": [
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-01.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-01.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-gallery-01.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-gallery-01.jpeg"
       },
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-02.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-02.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-gallery-02.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-gallery-02.jpeg"
       },
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-03.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-03.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-gallery-03.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-gallery-03.jpeg"
       },
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-04.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-04.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-gallery-04.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-gallery-04.jpeg"
       },
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-05.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-05.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-gallery-05.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-gallery-05.jpeg"
       },
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-06.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-06.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-gallery-06.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-gallery-06.jpeg"
       },
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-07.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-07.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-gallery-07.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-gallery-07.jpeg"
       },
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-08.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-08.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-gallery-08.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-gallery-08.jpeg"
       },
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-09.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-09.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-gallery-09.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-gallery-09.jpeg"
       },
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-12.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-12.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-gallery-12.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-gallery-12.jpeg"
       },
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-gallery-11.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-gallery-11.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-gallery-11.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-gallery-11.jpeg"
       },
       {
         "title": "Project Title",
-        "largeImage": "image/maria-acolhe/maria-acolhe-equipe-gallery-01.jpeg",
-        "smallImage": "image/maria-acolhe/maria-acolhe-equipe-gallery-01.jpeg"
+        "largeImage": "/image/maria-acolhe/maria-acolhe-equipe-gallery-01.jpeg",
+        "smallImage": "/image/maria-acolhe/maria-acolhe-equipe-gallery-01.jpeg"
       }
     ],
   "Testimonials": [
     {
-      "img": "image/testimonials/01.jpg",
+      "img": "/image/testimonials/01.jpg",
       "text": "O Maria Acolhe foi meu porto seguro quando não tinha mais esperança. Me ajudaram a conseguir a medida protetiva, ofereceram apoio psicológico e, o mais importante: me mostraram que eu não estava sozinha. Hoje tenho minha vida de volta!",
       "name": "Ana Lúcia, 42 anos"
     },
     {
-      "img": "image/testimonials/02.jpg",
+      "img": "/image/testimonials/02.jpg",
       "text": "Minha irmã sofria calada há anos. Através do projeto, aprendi como denunciar e acolhê-la sem julgamentos. A equipe nos orientou em cada passo, desde a delegacia até o abrigo seguro. Gratidão por existirem!",
       "name": "Carlos Eduardo, 28 anos"
     },
     {
-      "img": "image/testimonials/03.jpg",
+      "img": "/image/testimonials/03.jpg",
       "text": "Trabalhar no Maria Acolhe transformou minha perspectiva sobre o impacto coletivo. Cada sorriso reconquistado, cada mulher que recupera sua autonomia... Isso não tem preço. Somos uma rede de reconstrução de vidas.",
       "name": "Dra. Mariana Campos, 35 anos"
     },
     {
-      "img": "image/testimonials/04.jpg",
+      "img": "/image/testimonials/04.jpg",
       "text": "Depois de 15 anos afastada do mercado por causa do meu agressor, o projeto me capacitou em cursos e me ajudou a conseguir meu primeiro emprego formal. Finalmente me sinto dona do meu futuro!",
       "name": "Roberta Souza, 50 anos "
     },
     {
-      "img": "image/testimonials/04.jpg",
+      "img": "/image/testimonials/04.jpg",
       "text": "Depois de 15 anos afastada do mercado por causa do meu agressor, o projeto me capacitou em cursos e me ajudou a conseguir meu primeiro emprego formal. Finalmente me sinto dona do meu futuro!",
       "name": "Roberta Souza, 50 anos "
     },
     {
-      "img": "image/testimonials/04.jpg",
+      "img": "/image/testimonials/04.jpg",
       "text": "Depois de 15 anos afastada do mercado por causa do meu agressor, o projeto me capacitou em cursos e me ajudou a conseguir meu primeiro emprego formal. Finalmente me sinto dona do meu futuro!",
       "name": "Roberta Souza, 50 anos "
     }
