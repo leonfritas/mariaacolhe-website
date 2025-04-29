@@ -2,6 +2,7 @@
 
 import NavItem from "@/components/navitem";
 
+
 function Hero() {
   return (
     <div id="home" className="relative min-h-screen w-full bg-cover bg-no-repeat
@@ -19,9 +20,12 @@ function Hero() {
           </p>
           <div className="flex items-center gap-4">            
             <NavItem href="#about" >
-            <button className="bg-gradient-to-r from-white to-gray-100 text-gray-900 font-medium py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all">
-              CONHEÇA O PROJETO
-            </button>     
+              <button className="bg-gradient-to-r from-white to-gray-100 text-gray-900 font-medium py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+                CONHEÇA O PROJETO
+              </button>     
+              
+
+              
             </NavItem>         
           </div>
         </div>

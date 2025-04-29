@@ -1,6 +1,7 @@
 import { EnvelopeIcon, PhoneIcon, TicketIcon } from "@heroicons/react/24/solid";
 import NavItem from "./navitem";
 
+
 const CURRENT_YEAR = new Date().getFullYear();
 const LINKS = [
   {name: "Home", href: "#home"}, 
@@ -68,6 +69,7 @@ export function Footer() {
               </ul> 
             </div>
           </div>  
+          
         </div>
 
         <h3          
@@ -80,6 +82,7 @@ export function Footer() {
         </h3>
 
       </div>
+      
     </footer>
   );
 }

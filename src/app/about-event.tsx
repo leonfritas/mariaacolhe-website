@@ -1,6 +1,7 @@
 "use client";
 
 
+
 const EVENT_INFO = [
   {    
     title: "Sobre o Projeto",

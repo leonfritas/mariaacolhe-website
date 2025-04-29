@@ -4,6 +4,8 @@ import {
   Collapse,
 } from "@material-tailwind/react";
 import NavItem from "./navitem";
+import Image from "next/image";
+import  logo  from "../../public/logos/maria-acolhe-logo.png"
 
 import {
   XMarkIcon,
@@ -15,10 +17,6 @@ import {
   QuestionMarkCircleIcon,
   EnvelopeIcon
 } from "@heroicons/react/24/solid";
-
-
-
-
 
 
 const NAV_MENU = [
@@ -94,7 +92,7 @@ export function Navbar() {
         <div className="container mx-auto flex items-center justify-between">
         <NavItem href="#home">
           <h2 className={`text-2xl font-bold ${isScrolling ? "text-gray-900" : "text-white"}`}>
-            Maria Acolhe
+            <Image className="w-36" src={logo} alt="logo-maria-acolhe" />
           </h2>
         </NavItem>
 
