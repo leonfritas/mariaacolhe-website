@@ -10,9 +10,9 @@ export function StatsCard({ count, title }: StatsCardProps) {
     <Card 
       color="transparent" 
       shadow={false}
-      placeholder={undefined} // Prop obrigatória no v3+
-      onPointerEnterCapture={undefined} // Prop obrigatória no v3+
-      onPointerLeaveCapture={undefined} // Prop obrigatória no v3+
+      placeholder={undefined} 
+      onPointerEnterCapture={undefined} 
+      onPointerLeaveCapture={undefined}
     >
       <h2 className="font-bold text-4xl" color="blue-gray">
         {count}

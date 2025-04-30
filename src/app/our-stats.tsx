@@ -19,7 +19,7 @@ const STATS = [
   },
   {
     count: "6",
-    title: "Equipes atuantes",
+    title: "Equipes de acolhimento",
   },
 ];
 
@@ -40,8 +40,7 @@ export function OurStats() {
             <StatsCard key={key} {...props} />
           ))}
         </div>
-      </div>
-       
+      </div>       
     </section>
   );
 }

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.mariaacolhe.com
+
+# Sitemaps
+Sitemap: https://www.mariaacolhe.com/sitemap.xml

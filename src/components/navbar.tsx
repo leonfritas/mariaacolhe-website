@@ -95,8 +95,6 @@ export function Navbar() {
             <Image className="w-36" src={logo} alt="logo-maria-acolhe" />
           </h2>
         </NavItem>
-
-
           <ul className={`ml-10 hidden items-center gap-6 lg:flex ${isScrolling ? "text-gray-900" : "text-white"}`}>
             {NAV_MENU.map(({ name, icon: Icon, href }) => (
               <NavItem key={name} href={href}>
@@ -105,7 +103,6 @@ export function Navbar() {
               </NavItem>
             ))}
           </ul>
-
           <button
             onClick={handleOpen}
             className="text-gray-500 hover:text-gray-900 lg:hidden"
@@ -116,9 +113,7 @@ export function Navbar() {
               <Bars3Icon strokeWidth={2} className="h-6 w-6" />
             )}
           </button>
-
         </div>
-
         <Collapse open={open}>
           <div className="container mx-auto mt-4 rounded-lg bg-white px-6 py-5">
             <ul className="flex flex-col gap-4 text-gray-900">

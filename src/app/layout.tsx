@@ -21,14 +21,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
-        <script
-          defer
-          data-site="mariaacolhe.com"
-          // src="https://www.mariaacolhe.com"
-        ></script>
-        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+        <meta property="og:title" content="Maria Acolhe" />
+        <meta property="og:description" content="Projeto dedicado ao acolhimento e suporte humanizado." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mariaacolhe.com" />
+        <meta property="og:image" content="https://www.mariaacolhe.com/og-image.png" />
+        <link rel="shortcut icon" href="/image/maria-acolhe-icon.png" type="image/png" />
       </head>
       <body className={roboto.className}>
         <Layout>

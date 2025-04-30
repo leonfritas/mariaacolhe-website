@@ -1,7 +1,5 @@
 
 
-
-
 interface NavItemProps {
     children: React.ReactNode;
     href?: string;
@@ -12,7 +10,6 @@ interface NavItemProps {
     href?: string;
     onClick?: () => void;
   }
-
 
 export default function NavItem({ children, href, onClick }: NavItemProps) {
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -28,14 +25,12 @@ export default function NavItem({ children, href, onClick }: NavItemProps) {
       onClick?.();
     };
     
-  
     return (
       <li className="list-none">
         <a
           href={href || "#"}
           onClick={handleClick}
           target={href?.startsWith("http") ? "_blank" : "_self"}
-       
           className="flex items-center gap-2 font-medium"
         >
           {children}

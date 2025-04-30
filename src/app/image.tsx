@@ -9,8 +9,7 @@ interface ImageProps {
 export const Image: React.FC<ImageProps> = ({ title, largeImage, smallImage }) => {
   return (
     <div className="portfolio-item">
-      <div className="hover-bg">
-        
+      <div className="hover-bg">        
         <a href={largeImage} title={title} data-lightbox-gallery="gallery1">
           <div className="hover-text">
             <h4>{title}</h4>

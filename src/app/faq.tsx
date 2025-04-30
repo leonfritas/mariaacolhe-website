@@ -24,7 +24,6 @@ const FAQS = [
     title: "5. Qual o papel do juizado?",
     desc: "O Juizado concede Medidas Protetivas de Urgência para proteger vítimas, julga casos de violência contra a mulher e resolve processos de divórcio/dissolução de união estável sem partilha de bens, garantindo agilidade e segurança jurídica.",
   },
-
 ];
 
 export function Faq() {
@@ -46,7 +45,6 @@ export function Faq() {
            Estamos aqui para responder às dúvidas mais comuns e oferecer as informações que você precisa.
           </p>
         </div>
-
         <div className="mx-auto lg:max-w-screen-lg lg:px-20">
           {FAQS.map(({ title, desc }, key) => (
             <Accordion
