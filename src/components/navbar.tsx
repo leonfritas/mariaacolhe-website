@@ -15,7 +15,8 @@ import {
   ChartBarIcon,
   ChatBubbleBottomCenterTextIcon,
   QuestionMarkCircleIcon,
-  EnvelopeIcon
+  EnvelopeIcon,
+  UserCircleIcon
 } from "@heroicons/react/24/solid";
 
 
@@ -49,7 +50,12 @@ const NAV_MENU = [
     name: "Contato",
     icon: EnvelopeIcon,
     href: "#contact",
-  },  
+  },
+  {
+    name: "Login",
+    icon: UserCircleIcon,
+    href: "/auth/login",
+  },    
 ];
 
 export function Navbar() {
@@ -79,14 +85,14 @@ export function Navbar() {
   }, []);
 
   return (
-    <MTNavbar
-    blurred={false}
-    fullWidth
-    className={`fixed top-0 z-50 border-0 ${isScrolling ? "bg-white" : "bg-transparent"} shadow-none`}
-    placeholder="" 
-    onPointerEnterCapture={() => {}}
-    onPointerLeaveCapture={() => {}}
-  >
+<MTNavbar
+  blurred={false}
+  fullWidth
+  className={`fixed top-0 z-50 border-0 ${isScrolling ? "bg-white" : "bg-transparent"} shadow-none`}
+  {...({} as any)}
+>
+
+
   
       <div>
         <div className="container mx-auto flex items-center justify-between">

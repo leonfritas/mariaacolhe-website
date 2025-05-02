@@ -1,40 +1,45 @@
 "use client";
+import { useEffect, useState } from 'react';
+import { getAbouts } from '../service/about-service';
 
-
-
-const EVENT_INFO = [
-  {    
-    title: "Sobre o Projeto",
-    description:
-      "O Maria Acolhe é uma iniciativa transformadora que atua no combate à violência doméstica através de acolhimento integral. Oferecemos suporte psicológico, orientação jurídica e espaços de diálogo para vítimas e agressores, promovendo a quebra de ciclos violentos e a construção de relações saudáveis.",
-    subTitle: "Conheça Nossa História",
-  },
-  {
-    title: "Por que Participar?",
-    description:
-      "Mais do que um serviço de assistência, o Maria Acolhe é uma ponte para o diálogo, uma rede de apoio que transforma dor em esperança e violência em oportunidade de recomeço. Queremos que todos os participantes sintam-se ouvidos, fortalecidos e capazes de escrever uma nova história.",
-    subTitle: "Seu Novo Começo",
-  },
-];
+interface About {
+  titulo: string;
+  texto: string;
+  subTitulo: string;
+}
 
 export function AboutEvent() {
+
+  const [aboutData, setAboutData] = useState<About[]>([]);
+
+  useEffect(() => {
+    getAbouts()
+      .then(response => {        
+        setAboutData(response.data);
+      })
+      .catch(error => {
+        console.error("Erro ao buscar dados:", error);
+      });
+  }, []);
+  
+
   return (
     <section id="about" className="container mx-auto flex flex-col items-center px-4 py-10">
       {
-        EVENT_INFO.map((event, index) => (
+        aboutData?.map((event, index) => (
           <div key={index} className="mb-10">
             <h6 className="text-center mb-2 text-orange-500 font-bold lg:text-2xl">
-              {event.subTitle}
+              {event.subTitulo}
             </h6>
             <h3 className="text-center text-2xl font-bold text-blue-gray-900 mb-6 lg:text-3xl">
-              {event.title}
+              {event.titulo}
             </h3>
             <p className="mt-2 max-w-4xl mx-auto w-full text-center text-lg font-normal text-gray-500 mb-8 lg:text-2xl">
-              {event.description}
+              {event.texto}
             </p>
           </div>
         ))
-      }      
+      }
     </section>
   );
 }

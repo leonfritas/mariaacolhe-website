@@ -1,29 +1,56 @@
 "use client";
 
-
-
+import { useEffect, useState } from "react";
 import StatsCard from "@/components/stats-card";
+import { getStats } from "../service/stats-service";
 
-const STATS = [
-  {
-    count: "20mil+",
-    title: "Pessoas atendidas",
-  },
-  {
-    count: "400+",
-    title: "Palestras",
-  },
-  {
-    count: "10",
-    title: "Anos de atuação",
-  },
-  {
-    count: "6",
-    title: "Equipes de acolhimento",
-  },
-];
+interface StatData {
+  numeroEstatistica: string;
+  legendaEstatistica: string;
+}
 
 export function OurStats() {
+  const [stats, setStats] = useState<StatData[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const fetchStats = async () => {
+      try {
+        const response = await getStats();
+        
+        const formattedStats = response.data.map((item: any) => ({
+          numeroEstatistica: item.numeroEstatistica, 
+          legendaEstatistica: item.legendaEstatistica,
+        }));
+        setStats(formattedStats);
+      } catch (err) {
+        setError("Erro ao carregar estatísticas");
+        console.error(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchStats();
+  }, []);
+
+  if (loading) {
+    return (
+      <section id="stats" className="container mx-auto px-10 py-24">
+        <p>Carregando estatísticas...</p>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section id="stats" className="container mx-auto px-10 py-24">
+        <p className="text-red-500">{error}</p>
+      </section>
+    );
+  }
+
   return (
     <section id="stats" className="container mx-auto grid gap-10 px-10 py-24 lg:grid-cols-1 lg:gap-20 xl:grid-cols-2 xl:place-items-center">
       <div>
@@ -36,8 +63,12 @@ export function OurStats() {
       </div>
       <div>
         <div className="grid grid-cols-2 gap-8 gap-x-28">
-          {STATS.map((props, key) => (
-            <StatsCard key={key} {...props} />
+          {stats.map((stat, index) => (
+            <StatsCard     
+              key={index}          
+              count={stat.numeroEstatistica} 
+              title={stat.legendaEstatistica} 
+            />
           ))}
         </div>
       </div>       

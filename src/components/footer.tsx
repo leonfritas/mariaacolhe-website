@@ -28,7 +28,7 @@ export function Footer() {
               </p>
               <div className="flex items-center justify-center gap-5 mb-10">                
                 <a
-                  href="https://wa.me/+5592981445952"
+                  href="https://wa.me/+5592994174297"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-white flex flex-col items-center justify-center gap-1"

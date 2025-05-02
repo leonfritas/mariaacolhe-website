@@ -11,8 +11,7 @@ export function StatsCard({ count, title }: StatsCardProps) {
       color="transparent" 
       shadow={false}
       placeholder={undefined} 
-      onPointerEnterCapture={undefined} 
-      onPointerLeaveCapture={undefined}
+      {...({} as any)}
     >
       <h2 className="font-bold text-4xl" color="blue-gray">
         {count}

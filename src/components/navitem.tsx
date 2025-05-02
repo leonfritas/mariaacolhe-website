@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 interface NavItemProps {
@@ -27,14 +28,14 @@ export default function NavItem({ children, href, onClick }: NavItemProps) {
     
     return (
       <li className="list-none">
-        <a
+        <Link
           href={href || "#"}
           onClick={handleClick}
           target={href?.startsWith("http") ? "_blank" : "_self"}
           className="flex items-center gap-2 font-medium"
         >
           {children}
-        </a>
+        </Link>
       </li>
     );
   }
