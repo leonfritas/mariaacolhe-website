@@ -1,8 +1,9 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
+import { Suspense } from 'react';
 
-export default function ErrorPage() {
+function ErrorContent() {
   const searchParams = useSearchParams();
   const error = searchParams.get('error');
 
@@ -11,5 +12,13 @@ export default function ErrorPage() {
       <h1>Erro de autenticação</h1>
       <p>{error ?? 'Erro desconhecido'}</p>
     </div>
+  );
+}
+
+export default function ErrorPage() {
+  return (
+    <Suspense fallback={<div>Carregando...</div>}>
+      <ErrorContent />
+    </Suspense>
   );
 }
