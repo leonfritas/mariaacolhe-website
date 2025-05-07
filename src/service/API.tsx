@@ -1,8 +1,11 @@
-// src/service/api.ts
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8080/mariaacolhe/api',
+  baseURL: 'https://api.mariaacolhe.com',
+  withCredentials: true, 
+  headers: {
+    'Content-Type': 'application/json',
+  },
 });
 
 export default api;
