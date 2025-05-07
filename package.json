@@ -1,10 +1,10 @@
 {
-  "name": "nextjs-tailwind-event-landing-page",
+  "name": "maria-acolhe",
   "version": "1.0.0",
   "private": true,
-  "author": "Creative Tim",
-  "license": "See license in https://www.creative-tim.com/license",
-  "homepage": "https://demos.creative-tim.com/nextjs-tailwind-event-landing-page",
+  "author": "Noodle Software Solutions",
+  "license": "UNLICENSED",
+  "homepage": "https://mariaacolhe.com",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,9 +17,11 @@
     "@heroicons/react": "2.0.18",
     "@material-tailwind/react": "^2.1.10",
     "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
     "next": "^15.3.1",
     "next-auth": "^4.24.11",
     "next-sitemap": "^4.2.3",
+    "next-themes": "^0.4.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },

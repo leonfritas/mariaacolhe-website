@@ -4,7 +4,7 @@ import { Navbar, Footer } from "@/components";
 
 import React from "react";
 import Hero from "./hero";
-import AboutEvent from "./about-event";
+import About from "./about";
 import OurStats from "./our-stats";
 import Faq from "./faq";
 import { Gallery } from "./gallery";
@@ -19,7 +19,7 @@ export default function Portfolio() {
     <>
       <Navbar />
       <Hero />
-      <AboutEvent />
+      <About />
       <Gallery data={landingPageData.Gallery} />
       <OurStats />
       <Testimonials />

@@ -8,7 +8,7 @@ interface About {
   subTitulo: string;
 }
 
-export function AboutEvent() {
+export function About() {
 
   const [aboutData, setAboutData] = useState<About[]>([]);
 
@@ -44,4 +44,4 @@ export function AboutEvent() {
   );
 }
 
-export default AboutEvent;
+export default About;

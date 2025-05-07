@@ -1,4 +1,3 @@
-// src/lib/auth/authOptions.ts
 import { AuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { loginUser } from "@/service/user-service";
@@ -49,7 +48,7 @@ export const authOptions: AuthOptions = {
   },
   session: {
     strategy: "jwt",
-    maxAge: 60 * 30, // 30 minutos
+    maxAge: 60 * 30, 
     updateAge: 0,
   },
   jwt: {

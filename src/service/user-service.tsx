@@ -1,4 +1,3 @@
-// src/service/UsuarioService.ts
 import api from "./API";
 
 export const getUsers = () => api.get('/usuario');
