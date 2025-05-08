@@ -37,8 +37,10 @@ export function OurStats() {
 
   if (loading) {
     return (
-      <section id="stats" className="container mx-auto px-10 py-24">
-        <p>Carregando estatísticas...</p>
+      <section id="faq" className="py-8 px-8 lg:py-20">
+        <div className="container mx-auto text-center">
+          <p>Carregando estatísticas...</p>
+        </div >
       </section>
     );
   }

@@ -24,7 +24,7 @@ export const Testimonials: React.FC = () => {
         const response = await getTestimonials();
         setTestimonials(response.data);
       } catch (err) {
-        setError("Failed to load testimonials");
+        setError("Erro ao carregar os depoimentos");
         console.error(err);
       } finally {
         setLoading(false);
@@ -38,7 +38,7 @@ export const Testimonials: React.FC = () => {
     return (
       <div id="testimonials" className="py-[100px] bg-[#f6f6f6]">
         <div className="container mx-auto px-4 text-center">
-          <p>Loading testimonials...</p>
+          <p>Carregando depoimentos...</p>
         </div>
       </div>
     );
@@ -89,7 +89,7 @@ export const Testimonials: React.FC = () => {
             ))
           ) : (
             <div className="w-full text-center">
-              No testimonials available
+              Sem depoimentos disponíveis
             </div>
           )}
         </div>
