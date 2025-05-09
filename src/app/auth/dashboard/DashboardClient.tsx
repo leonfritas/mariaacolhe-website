@@ -17,28 +17,28 @@ const NAV_MENU = [
   {
     name: "Estatísticas",
     icon: ChartBarIcon,
-    href: "#stats",
+    href: "/auth/edit/stats-edit",
   },
   {
     name: "Depoimentos",
     icon: ChatBubbleBottomCenterTextIcon,
-    href: "#testimonials",
+    href: "/auth/edit/testimonial-edit",
   },
   {
     name: "Perguntas Frequentes",
     icon: QuestionMarkCircleIcon,
-    href: "#faq",
+    href: "/auth/edit/faq-edit",
   },
 ];
 
 export default function DashboardClient({ name }: { name: string }) {
   const handleLogout = async () => {
-    await signOut({ redirect: true, callbackUrl: "/" });
+    await signOut({ redirect: true, callbackUrl: "https://mariaacolhe.com" });
   };
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4">
-      <h1 className="text-4xl font-bold text-gray-900 mb-2">Dashboard</h1>
+      <h1 className="text-4xl font-bold text-gray-900 mb-2">Painel Administrativo</h1>
       <p className="text-lg text-gray-600 mb-8">Bem-vindo{name}!</p>
       <p className="text-lg text-gray-600 mb-8">Escolha qual sessão deseja editar</p>
 

@@ -9,13 +9,13 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { deleteAbout, getAbouts } from "@/service/about-service";
+import { deleteFaq, getFaqs} from "@/service/faq-service";
 import { useEffect, useState } from "react";
 
-type About = {
-  idSobre: number;
-  titulo: string;
-  subTitulo: string;
+type Faq = {
+  idFaq: number;
+  pergunta: string;
+  resposta: string;
 };
 
 type Props = {
@@ -23,14 +23,14 @@ type Props = {
   onInsert?: () => void;
 };
 
-export function AboutTable({ onEdit, onInsert  }: Props) {
-  const [data, setData] = useState<About[]>([]);
+export function FaqTable({ onEdit, onInsert  }: Props) {
+  const [data, setData] = useState<Faq[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadData() {
       try {
-        const response = await getAbouts();
+        const response = await getFaqs();
         setData(response.data);
       } catch (error) {
         console.error("Erro ao carregar dados:", error);
@@ -45,11 +45,11 @@ export function AboutTable({ onEdit, onInsert  }: Props) {
     onEdit?.(id);
   };
   
-  const handleDelete = async (idSobre: number) => {
+  const handleDelete = async (idFaq: number) => {
     if (confirm("Tem certeza que deseja excluir este item?")) {
       try {
-         await deleteAbout(idSobre);
-        setData(data.filter(item => item.idSobre !== idSobre));
+         await deleteFaq(idFaq);
+        setData(data.filter(item => item.idFaq !== idFaq));
         console.log("Item excluído com sucesso");
       } catch (error) {
         console.error("Erro ao excluir:", error);
@@ -61,6 +61,10 @@ export function AboutTable({ onEdit, onInsert  }: Props) {
     onInsert?.();
   };
 
+  function handleComeBack() {
+    window.history.back();
+  }
+
   if (loading) return <div className="container mx-auto flex flex-col items-center px-4 py-10">Carregando...</div>;
 
   return (
@@ -69,28 +73,28 @@ export function AboutTable({ onEdit, onInsert  }: Props) {
         <TableHeader>
           <TableRow className="border-none bg-[#F7F9FC] dark:bg-dark-2 [&>th]:py-4 [&>th]:text-base [&>th]:text-dark [&>th]:dark:text-white">
             <TableHead className="max-w-[55px]">Id</TableHead>
-            <TableHead>Título</TableHead>
-            <TableHead>Sub-Título</TableHead>
+            <TableHead>Pergunta</TableHead>
+            <TableHead>Resposta</TableHead>
             <TableHead className="text-right xl:pr-7.5">Ações</TableHead>
           </TableRow>
         </TableHeader>
 
         <TableBody>
-          {data.map((about) => (
-            <TableRow key={about.idSobre} className="border-[#eee] dark:border-dark-3">
+          {data.map((Faq) => (
+            <TableRow key={Faq.idFaq} className="border-[#eee] dark:border-dark-3">
               <TableCell className="min-w-[55px]">
-                <h5 className="text-dark dark:text-white">{about.idSobre}</h5>
+                <h5 className="text-dark dark:text-white">{Faq.idFaq}</h5>
               </TableCell>
 
               <TableCell>
                 <p className="text-dark dark:text-white">
-                  {about.titulo || "Sem título"}
+                  {Faq.pergunta || "Sem título"}
                 </p>
               </TableCell>
 
               <TableCell>
                 <p className="text-dark dark:text-white line-clamp-2">
-                  {about.subTitulo || "Sem sub-título"}
+                  {Faq.resposta || "Sem sub-título"}
                 </p>
               </TableCell>
 
@@ -98,7 +102,7 @@ export function AboutTable({ onEdit, onInsert  }: Props) {
                 <div className="flex items-center justify-end gap-x-3.5">
                   <button
                     className="hover:text-blue-600 transition-colors"
-                    onClick={() => handleEdit(about.idSobre)}
+                    onClick={() => handleEdit(Faq.idFaq)}
                     title="Editar"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -108,7 +112,7 @@ export function AboutTable({ onEdit, onInsert  }: Props) {
 
                   <button
                     className="hover:text-red-600 transition-colors"
-                    onClick={() => handleDelete(about.idSobre)}
+                    onClick={() => handleDelete(Faq.idFaq)}
                     title="Excluir"
                   >
                     <TrashIcon className="h-5 w-5" />
@@ -129,6 +133,12 @@ export function AboutTable({ onEdit, onInsert  }: Props) {
             <path fillRule="evenodd" d="M10 5a1 1 0 011 1v3h3a1 1 0 110 2h-3v3a1 1 0 11-2 0v-3H6a1 1 0 110-2h3V6a1 1 0 011-1z" clipRule="evenodd" />
           </svg>
           Adicionar Novo
+        </button>
+        <button
+          className="flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-colors"
+          onClick={handleComeBack}
+        >      
+          Voltar
         </button>
       </div>
     </div>
