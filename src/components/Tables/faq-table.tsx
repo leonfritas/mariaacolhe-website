@@ -56,6 +56,10 @@ export function FaqTable({ onEdit, onInsert  }: Props) {
       }
     }
   };
+
+  function handleComeBack() {
+    window.history.back();
+  }
   
   const handleInsert = () => {
     onInsert?.();
@@ -124,7 +128,8 @@ export function FaqTable({ onEdit, onInsert  }: Props) {
         </TableBody>
       </Table>
 
-      <div className="mt-4 flex justify-end">
+      <div className="mt-4 flex justify-end gap-5">
+        
         <button
           className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg transition-colors"
           onClick={handleInsert}
