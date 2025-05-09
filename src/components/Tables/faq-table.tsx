@@ -65,10 +65,6 @@ export function FaqTable({ onEdit, onInsert  }: Props) {
     onInsert?.();
   };
 
-  function handleComeBack() {
-    window.history.back();
-  }
-
   if (loading) return <div className="container mx-auto flex flex-col items-center px-4 py-10">Carregando...</div>;
 
   return (
