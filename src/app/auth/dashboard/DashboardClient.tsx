@@ -17,23 +17,23 @@ const NAV_MENU = [
   {
     name: "Estatísticas",
     icon: ChartBarIcon,
-    href: "#stats",
+    href: "/auth/edit/stats-edit",
   },
   {
     name: "Depoimentos",
     icon: ChatBubbleBottomCenterTextIcon,
-    href: "#testimonials",
+    href: "/auth/edit/testimonial-edit",
   },
   {
     name: "Perguntas Frequentes",
     icon: QuestionMarkCircleIcon,
-    href: "#faq",
+    href: "/auth/edit/faq-edit",
   },
 ];
 
 export default function DashboardClient({ name }: { name: string }) {
   const handleLogout = async () => {
-    await signOut({ redirect: true, callbackUrl: "/" });
+    await signOut({ redirect: true, callbackUrl: "https://mariaacolhe.com" });
   };
 
   return (

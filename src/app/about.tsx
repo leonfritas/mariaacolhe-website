@@ -34,7 +34,7 @@ export function About() {
     return (
       <section id="faq" className="py-8 px-8 lg:py-20">
         <div className="container mx-auto text-center">
-          <p>Carregando estatísticas...</p>
+          <p>Carregando informações...</p>
         </div >
       </section>
     );

@@ -30,7 +30,7 @@ export function TextAreaGroup({
         onChange={onChange}
         placeholder={placeholder}
         disabled={disabled}
-        className="rounded border border-gray-300 p-2 min-h-[100px]"
+        className="rounded border border-gray-300 p-2 min-h-[200px]"
       />
     </div>
   );
