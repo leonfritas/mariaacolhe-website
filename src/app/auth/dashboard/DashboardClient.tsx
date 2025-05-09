@@ -38,7 +38,7 @@ export default function DashboardClient({ name }: { name: string }) {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-white px-4">
-      <h1 className="text-4xl font-bold text-gray-900 mb-2">Dashboard</h1>
+      <h1 className="text-4xl font-bold text-gray-900 mb-2">Painel Administrativo</h1>
       <p className="text-lg text-gray-600 mb-8">Bem-vindo{name}!</p>
       <p className="text-lg text-gray-600 mb-8">Escolha qual sessão deseja editar</p>
 
