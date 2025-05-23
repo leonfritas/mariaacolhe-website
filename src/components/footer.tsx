@@ -26,17 +26,7 @@ export function Footer() {
               <p className="mx-auto mb-8 text-base text-gray-500 lg:text-[18px]">
                 Atendimento de segunda a sexta-feira, das 8h às 18h. Não realizamos atendimento aos sábados, domingos e feriados.
               </p>
-              <div className="flex items-center justify-center gap-5 mb-10">                
-                <a
-                  href="https://wa.me/+5592994174297"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white flex flex-col items-center justify-center gap-1"
-                >
-                  <i className="fa-brands fa-whatsapp text-5xl text-green-700" />
-                  <p className="text-white text-lg font-semibold">Clique aqui</p>
-                </a>                              
-              </div>
+
               <div>
               <div className="flex gap-5">
                 <PhoneIcon className="h-6 w-6 text-white" />

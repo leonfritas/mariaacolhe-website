@@ -9,24 +9,30 @@ interface StatData {
   legendaEstatistica: string;
 }
 
+// Dados simulados de fallback
+const fallbackStats: StatData[] = [
+  { numeroEstatistica: "500+", legendaEstatistica: "Famílias acolhidas" },
+  { numeroEstatistica: "1200+", legendaEstatistica: "Refeições servidas" },
+  { numeroEstatistica: "300+", legendaEstatistica: "Voluntários atuando" },
+  { numeroEstatistica: "50+", legendaEstatistica: "Projetos apoiados" },
+];
+
 export function OurStats() {
   const [stats, setStats] = useState<StatData[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchStats = async () => {
       try {
         const response = await getStats();
-        
         const formattedStats = response.data.map((item: any) => ({
-          numeroEstatistica: item.numeroEstatistica, 
+          numeroEstatistica: item.numeroEstatistica,
           legendaEstatistica: item.legendaEstatistica,
         }));
         setStats(formattedStats);
       } catch (err) {
-        setError("Erro ao carregar estatísticas");
-        console.error(err);
+        console.warn("Não foi possível carregar dados reais. Usando dados simulados.");
+        setStats(fallbackStats); // Usa dados simulados
       } finally {
         setLoading(false);
       }
@@ -37,18 +43,8 @@ export function OurStats() {
 
   if (loading) {
     return (
-      <section id="faq" className="py-8 px-8 lg:py-20">
-        <div className="container mx-auto text-center">
-          <p>Carregando estatísticas...</p>
-        </div >
-      </section>
-    );
-  }
-
-  if (error) {
-    return (
-      <section id="stats" className="container mx-auto px-10 py-24">
-        <p className="text-red-500">{error}</p>
+      <section id="stats" className="py-20 px-10 text-center">
+        <p>Carregando estatísticas...</p>
       </section>
     );
   }
@@ -66,14 +62,14 @@ export function OurStats() {
       <div>
         <div className="grid grid-cols-2 gap-8 gap-x-28">
           {stats.map((stat, index) => (
-            <StatsCard     
-              key={index}          
-              count={stat.numeroEstatistica} 
-              title={stat.legendaEstatistica} 
+            <StatsCard
+              key={index}
+              count={stat.numeroEstatistica}
+              title={stat.legendaEstatistica}
             />
           ))}
         </div>
-      </div>       
+      </div>
     </section>
   );
 }

@@ -10,6 +10,7 @@ import Faq from "./faq";
 import { Gallery } from "./gallery";
 import JsonData from "../data/data.json";
 import { Testimonials } from "./testimonials";
+import FloatingWhatsAppButton from "@/components/floating-wpp-button";
 
 export default function Portfolio() {
   
@@ -25,6 +26,7 @@ export default function Portfolio() {
       <Testimonials />
       <Faq />
       <Footer />
+      <FloatingWhatsAppButton />
     </>
   );
 }
