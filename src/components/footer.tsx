@@ -31,13 +31,13 @@ export function Footer() {
               <div className="flex gap-5">
                 <PhoneIcon className="h-6 w-6 text-white" />
                 <h6 className="text-white text-lg font-semibold">
-                  (81) 9 9999-9999
+                  (92) 9 9417-4297
                 </h6>
               </div>
               <div className="flex my-2 gap-5">
                 <EnvelopeIcon className="h-6 w-6 text-white" />
                 <h6 className="text-white text-lg font-semibold">
-                  mariaacolhe@juizado.com
+                  cyntia.freitas@tjam.jus.br
                 </h6>
               </div>
               </div>
